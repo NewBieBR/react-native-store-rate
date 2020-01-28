@@ -663,6 +663,13 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@hadx/react-native-store-rate@../hadx-react-native-store-rate-1.0.1.tgz":
+  version "1.0.1"
+  resolved "../hadx-react-native-store-rate-1.0.1.tgz#1f8c3a0946bdadda4b8482c8303a88ff597b6872"
+  dependencies:
+    react-native-normalize "^1.0.1"
+    react-native-rate "^1.1.10"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -5092,13 +5099,6 @@ react-native-rate@^1.1.10:
   version "1.1.10"
   resolved "https://registry.yarnpkg.com/react-native-rate/-/react-native-rate-1.1.10.tgz#278098fad536fba71fdedb6aab71278aa0946ced"
   integrity sha512-07L5923RpL+AdnsZCQSkiMbRi/7N/OJtZ6AWAl5bZyhncDD7L1ap94H3jtV7uFW5WGBNxMnGiC4fPLzn426mMw==
-
-react-native-store-rate@../react-native-store-rate-1.0.0.tgz:
-  version "1.0.0"
-  resolved "../react-native-store-rate-1.0.0.tgz#0dd75d63c620da6bc97f026f53e50a6f8dd9ad48"
-  dependencies:
-    react-native-normalize "^1.0.1"
-    react-native-rate "^1.1.10"
 
 react-native@0.61.5:
   version "0.61.5"

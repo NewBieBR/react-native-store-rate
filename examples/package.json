@@ -10,9 +10,10 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@hadx/react-native-store-rate": "../hadx-react-native-store-rate-1.0.1.tgz",
     "react": "16.9.0",
     "react-native": "0.61.5",
-    "react-native-store-rate": "../react-native-store-rate-1.0.0.tgz"
+    "react-native-rate": "^1.1.10"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

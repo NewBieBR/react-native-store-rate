@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {SafeAreaView, Button, View} from 'react-native';
-import StoreRatePopup from 'react-native-store-rate';
+import StoreRatePopup from '@hadx/react-native-store-rate';
 
 const App = () => {
   const [visible, setVisible] = useState(true);
