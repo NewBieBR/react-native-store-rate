@@ -5088,6 +5088,11 @@ react-native-normalize@^1.0.1:
   resolved "https://registry.yarnpkg.com/react-native-normalize/-/react-native-normalize-1.0.1.tgz#52de71d1b86dd357c6f40fd4ab84b10336f0f072"
   integrity sha512-QYs95xhARhlcWWcDC77r4nVfxa3pDSfIBx2gdYZ+DOcLhSdPzRHFivWbGu3mL01JcvE69pMK7BmbPCda28vXwA==
 
+react-native-rate@^1.1.10:
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/react-native-rate/-/react-native-rate-1.1.10.tgz#278098fad536fba71fdedb6aab71278aa0946ced"
+  integrity sha512-07L5923RpL+AdnsZCQSkiMbRi/7N/OJtZ6AWAl5bZyhncDD7L1ap94H3jtV7uFW5WGBNxMnGiC4fPLzn426mMw==
+
 react-native@0.61.5:
   version "0.61.5"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.61.5.tgz#6e21acb56cbd75a3baeb1f70201a66f42600bba8"

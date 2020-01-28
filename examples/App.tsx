@@ -8,10 +8,16 @@ const App = () => {
     <>
       <SafeAreaView>
         <StoreRating
-          primaryColor="coral"
+          primaryColor="#ff6a69"
+          rateOptions={{
+            AppleAppID: '1462815590',
+            preferInApp: true,
+            openAppStoreIfInAppFails: true,
+          }}
           // modalProps={{animationType: 'slide'}}
+          onFeedbackSubmit={feedback => console.warn(feedback)}
           visible={visible}
-          onPressOutside={() => setVisible(false)}
+          onCancelPress={() => setVisible(false)}
         />
         <View style={{top: 300}}>
           <Button
