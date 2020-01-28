@@ -17,7 +17,7 @@ import Rate, {IConfig} from 'react-native-rate';
 
 const SCREEN_WIDTH = Dimensions.get('screen').width;
 
-export interface StoreRatingProps {
+export interface StoreRatePopupProps {
   primaryColor?: string;
   visible: boolean;
   rateOptions?: IConfig;
@@ -43,16 +43,16 @@ export interface StoreRatingProps {
   cancelable?: boolean;
 }
 
-export interface StoreRatingState {
+export interface StoreRatePopupState {
   givingFeedback: boolean;
   feedback: string;
 }
 
-export default class StoreRating extends React.Component<
-  StoreRatingProps,
-  StoreRatingState
+export default class StoreRatePopup extends React.Component<
+  StoreRatePopupProps,
+  StoreRatePopupState
 > {
-  static defaultProps: Partial<StoreRatingProps> = {
+  static defaultProps: Partial<StoreRatePopupProps> = {
     primaryColor: '#08f',
     heading: 'Enjoying the app?',
     rateFiveStarsLabel: 'Rate 5 stars',
@@ -60,10 +60,11 @@ export default class StoreRating extends React.Component<
     sendFeedbackLabel: 'Send feedback',
     cancelLabel: 'Cancel',
     cancelable: true,
+    modalProps: {animationType: 'slide'},
   };
   headingSize = new Animated.Value(0);
 
-  constructor(props: StoreRatingProps) {
+  constructor(props: StoreRatePopupProps) {
     super(props);
     this.state = {givingFeedback: false, feedback: ''};
   }

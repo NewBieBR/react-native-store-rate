@@ -1,3 +1,3 @@
-import StoreRating from './StoreRating';
+import StoreRatePopup from './StoreRatePopup';
 
-export default StoreRating;
+export default StoreRatePopup;

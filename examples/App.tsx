@@ -1,21 +1,25 @@
 import React, {useState} from 'react';
 import {SafeAreaView, Button, View} from 'react-native';
-import StoreRating from './StoreRating';
+import StoreRatePopup from 'react-native-store-rate';
 
 const App = () => {
   const [visible, setVisible] = useState(true);
   return (
     <>
       <SafeAreaView>
-        <StoreRating
+        <StoreRatePopup
           primaryColor="#ff6a69"
           rateOptions={{
             AppleAppID: '1462815590',
+            GooglePackageName: 'com.mywebsite.myapp',
             preferInApp: true,
             openAppStoreIfInAppFails: true,
           }}
           // modalProps={{animationType: 'slide'}}
-          onFeedbackSubmit={feedback => console.warn(feedback)}
+          onFeedbackSubmit={feedback => {
+            setVisible(false);
+            console.warn(feedback);
+          }}
           visible={visible}
           onCancelPress={() => setVisible(false)}
         />
