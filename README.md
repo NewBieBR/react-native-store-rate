@@ -2,6 +2,8 @@
 
 Show a popup asking for ratings or feedback. Show real in app (*or open store*) rating if users gave 5 stars.
 
+<img src="./assets/rate.gif" height=400>
+
 ## Installation
 
 1. Install this package

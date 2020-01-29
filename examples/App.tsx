@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {SafeAreaView, Button, View} from 'react-native';
-import StoreRatePopup from '@hadx/react-native-store-rate';
+import {SafeAreaView, Button, View, Text} from 'react-native';
+import StoreRatePopup from './StoreRatePopup';
 
 const App = () => {
   const [visible, setVisible] = useState(true);
@@ -15,7 +15,11 @@ const App = () => {
             preferInApp: true,
             openAppStoreIfInAppFails: true,
           }}
-          // modalProps={{animationType: 'slide'}}
+          renderPopupHeading={() => (
+            <View>
+              <Text>Test</Text>
+            </View>
+          )}
           onFeedbackSubmit={feedback => {
             setVisible(false);
             console.warn(feedback);
