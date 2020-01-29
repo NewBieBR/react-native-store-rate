@@ -1,6 +1,6 @@
 {
   "name": "@hadx/react-native-store-rate",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "",
   "main": "src/index.ts",
   "scripts": {
